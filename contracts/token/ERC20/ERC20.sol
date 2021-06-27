@@ -35,10 +35,13 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
     mapping(address => mapping(address => uint256)) private _allowances;
 
-    uint256 private _totalSupply;
-
-    string private _name;
-    string private _symbol;
+    //uint256 private _totalSupply;
+    //string private _name;
+    //string private _symbol;
+    
+    uint256 public _totalSupply;
+    string public _name;
+    string public _symbol;    
 
     /**
      * @dev Sets the values for {name} and {symbol}.
